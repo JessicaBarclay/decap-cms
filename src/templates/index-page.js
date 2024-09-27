@@ -22,6 +22,11 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
+      <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+      <script>
+      CMS.init();
+      CMS.registerPreviewTemplate("my-template", MyTemplate);
+      </script>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
       <section className="section section--gradient">
         <div className="container">
